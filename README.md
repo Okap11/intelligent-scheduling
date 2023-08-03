@@ -12,7 +12,8 @@
 
 用户在进行相关操作之前，需要先登录系统。输入相关登录信息以及选择相应的登录身份，点击相关提示按钮，进行系统登录。系统对用户输入的相关信息与数据库信息进行对照验证，信息验证通过后，用户登录成功，否则提示登录信息有误，请重新登录。用户登录身份包括普通用户和管理员，登录信息包括基本的账号信息、登录 身份以及动态验证码等，设置动态验证码，可以有效防止不法分子利用非法软件对用户密码进行恶意破解。仅当输入的登录信息与数据库中保存的验证信息匹配成功时，才能够成功登录系统。
 
-![img](file:///C:/Users/19095/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![image](https://github.com/Okap11/intelligent-scheduling/assets/107338618/a951db8c-ad08-425e-9b23-3b22614b10ea)
+
 
 图4.1 用户登录界面
 
@@ -66,7 +67,8 @@
 
 第三步：输入密码。该步骤需输入新密码，提交信息后，新密码将设置成功。
 
-![img](file:///C:/Users/19095/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+![image](https://github.com/Okap11/intelligent-scheduling/assets/107338618/bda7b9e0-8253-4b64-9b2e-b98cb021b3ef)
+
 
 图4.2 账号密码修改界面
 
@@ -124,7 +126,8 @@
 
 5.授权访问：最后，只有授权登录的管理员或普通用户才能够访问和修改这些信息。
 
-![img](file:///C:/Users/19095/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+![image](https://github.com/Okap11/intelligent-scheduling/assets/107338618/2bdca5d4-3b93-4e6b-aa3e-94e45a0fa1dc)
+
 
 图4.3 用户信息界面
 
@@ -146,7 +149,8 @@
 
   }
 
-![img](file:///C:/Users/19095/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg)
+![image](https://github.com/Okap11/intelligent-scheduling/assets/107338618/9112bded-9e68-4be2-8656-d046d042597b)
+
 
 图4.4 用户信息修改界面
 
@@ -194,7 +198,8 @@
 
 关店规则：默认值2.5,3,13，即关店 2 个半小时内需要有员工当值，当值员工数不小于3并且不小于门店面积除以13。
 
-![img](file:///C:/Users/19095/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg)
+![image](https://github.com/Okap11/intelligent-scheduling/assets/107338618/6bb51151-0f3c-4d0b-b4ca-92ab9994167c)
+
 
 图4.5 排班计划修改界面
 
@@ -260,7 +265,8 @@ def getData():
 
 核心代码和效果图如下：
 
-![img](file:///C:/Users/19095/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg)
+![image](https://github.com/Okap11/intelligent-scheduling/assets/107338618/9aa2ec8e-0c7a-4d96-bd68-9a09be7a83ea)
+
 
 图4.6 排班首页界面
 
@@ -626,7 +632,8 @@ public List<List<Map<String, List<User>>>> getScheduleData(String formatDate) th
 
 管理员可以通过手动添加和excel表格导入添加员工信息。
 
-![img](file:///C:/Users/19095/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg)
+![image](https://github.com/Okap11/intelligent-scheduling/assets/107338618/51624df4-d2f1-4b56-876a-d8527aadf4e4)
+
 
 图4.7 员工手动添加界面
 
@@ -750,7 +757,8 @@ public List<List<Map<String, List<User>>>> getScheduleData(String formatDate) th
 
   }
 
-![img](file:///C:/Users/19095/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg)
+![image](https://github.com/Okap11/intelligent-scheduling/assets/107338618/5aba32a4-17d9-4f8c-84da-139e747a3749)
+
 
 图4.8 员工excel添加界面
 
@@ -884,7 +892,8 @@ storeMapper.selectOne(new LambdaQueryWrapper<Store>()
 
 管理员可以通过条件模糊查询查找对应的员工信息，并对其进行修改删除等操作。
 
-![img](file:///C:/Users/19095/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg)
+![image](https://github.com/Okap11/intelligent-scheduling/assets/107338618/b99ccac9-4460-436a-9d8b-9e08bb294260)
+
 
 图4.9 员工管理界面
 
@@ -934,7 +943,8 @@ throw new SystemException(Code.SYSTEM_ERROR, "服务器访问超时，请重试�
 
 管理员可以通过条件模糊查询查找对应的门店信息，并对其进行添加、修改和删除等操作。管理员对门店的一系列操作都会生成对应的日志信息。
 
-![img](file:///C:/Users/19095/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg)
+![image](https://github.com/Okap11/intelligent-scheduling/assets/107338618/f055dc7d-7149-440d-81f9-753d9608d56f)
+
 
 图4.10 门店管理界面
 
@@ -1078,7 +1088,8 @@ throw new SystemException(Code.SYSTEM_ERROR, "服务器访问超时，请重试�
 
 管理员可以查询员工的请假申请并其进行驳回与批准操作，若超过七天没有审批，则系统默认为驳回操作。
 
-![img](file:///C:/Users/19095/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg)
+![image](https://github.com/Okap11/intelligent-scheduling/assets/107338618/aa3a8fa4-97a0-482d-aa71-5c2b68806ff9)
+
 
 图4.11 请假管理界面
 
